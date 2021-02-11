@@ -1,14 +1,15 @@
-import React from 'react';
-
-//import firebase from './firebaseServices/services'
-
+import React, { useEffect } from 'react';
 import { requestPermission } from "./firebaseServices/services";
 
 function App() {
+  
+  useEffect(()=>{
+    requestPermission()
+  },[])
+
   return (
     <div className="App">
-     <h1>Hello</h1>
-     <button onClick={requestPermission}>Configure Token</button>
+     <h1>Quiz-app PWA</h1>
     </div>
   );
 }
