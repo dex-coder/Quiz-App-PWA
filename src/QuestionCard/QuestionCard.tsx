@@ -49,7 +49,7 @@ const QuestionCard: React.FC<questionPropType> = ({
               );
             })}
             <div className="button_container">
-              <button className="submit_ans">Submit</button>
+              <button className="button">Submit</button>
             </div>
           </form>
         </div>

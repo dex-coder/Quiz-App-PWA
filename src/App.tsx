@@ -64,7 +64,14 @@ function App() {
         <div className="result_card_container">
         <h1 className="result_title">Result</h1>
         <p className="result_score">Your final score is: {score} <br/>  out of: {quiz.length}</p>
-        {/* <button onClick={(e)=>{}}>Restart</button> */}
+        <div className="button_container">
+        <button className="button" onClick={()=>{
+          setScore(0);
+          setScore(0)
+          setResult(true)
+          window.location.reload(false)
+        }}>Restart</button>
+        </div>
         </div>
       </div>
     )
