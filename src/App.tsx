@@ -69,7 +69,7 @@ function App() {
           setScore(0);
           setScore(0)
           setResult(true)
-          window.location.reload(false)
+          window.location.reload(true)
         }}>Restart</button>
         </div>
         </div>
