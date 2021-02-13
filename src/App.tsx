@@ -27,6 +27,7 @@ function App() {
   let [currentStep, setcurrentStep] = useState(0)
   let [score, setScore] = useState(0)
   let [result, setResult] = useState(false);
+  
   useEffect(() => {
     requestPermission()
     async function fetchData() {
@@ -69,7 +70,7 @@ function App() {
           setScore(0);
           setScore(0)
           setResult(true)
-          window.location.reload(true)
+          window.location.reload()
         }}>Restart</button>
         </div>
         </div>
